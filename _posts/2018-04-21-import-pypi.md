@@ -287,3 +287,8 @@ sys.meta_path.append(PipFinder())
 ```
 
 `import-pypi`其实就是在python导入模块的过程中，对于寻找模块失败的时候，做了一个自动下载的功能，并且只要导入`import-pypi`模块的时候，将在sys.meta_path中注册一个能实现自动下载未寻找到的模块的finder，这样每次导入模块的时候都能实现这个功能。
+
+引用:
+1. https://blog.csdn.net/u010786109/article/details/52038443
+2. https://www.blog.pythonlibrary.org/2016/05/27/python-201-an-intro-to-importlib/
+3. https://docs.python.org/3.5/library/importlib.html
